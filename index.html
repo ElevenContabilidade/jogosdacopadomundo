@@ -159,10 +159,10 @@ body{background:#111;font-family:'Barlow',sans-serif;color:#fff;min-height:100vh
 <!-- NAV -->
 <div class="nav-tabs">
   <button class="tab-btn active" onclick="mudarAba('grupos',this)">Fase de Grupos</button>
-  <button class="tab-btn" onclick="mudarAba('oitavas',this)">Oitavas</button>
-  <button class="tab-btn" onclick="mudarAba('quartas',this)">Quartas</button>
-  <button class="tab-btn" onclick="mudarAba('semi',this)">Semifinais</button>
-  <button class="tab-btn" onclick="mudarAba('final',this)">Final</button>
+  <button class="tab-btn" onclick="mudarAba('oitavas',this)">2ª Fase</button>
+  <button class="tab-btn" onclick="mudarAba('quartas',this)">Oitavas</button>
+  <button class="tab-btn" onclick="mudarAba('semi',this)">Quartas</button>
+  <button class="tab-btn" onclick="mudarAba('final',this)">Semi / Final</button>
 </div>
 
 <!-- ===== GRUPOS ===== -->
@@ -367,7 +367,7 @@ body{background:#111;font-family:'Barlow',sans-serif;color:#fff;min-height:100vh
 
 <!-- OITAVAS -->
 <div id="sec-oitavas" class="section">
-  <div class="ko-section-title ko-oitavas">Oitavas de Final</div>
+  <div class="ko-section-title ko-oitavas">Segunda Fase &mdash; 16 jogos</div>
   <div class="ko-card"><span class="ko-data">28/06 · 16H · Inglewood (EUA)</span><div class="ko-row"><span class="ko-time">2º Grupo A</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="o1c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">2º Grupo B</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="o1c2"></div></div>
   <div class="ko-card"><span class="ko-data">29/06 · 14H · Houston (EUA)</span><div class="ko-row"><span class="ko-time">1º Grupo C</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="o2c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">3º C/D/F/G/H</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="o2c2"></div></div>
   <div class="ko-card"><span class="ko-data">29/06 · 17H30 · Foxborough (EUA)</span><div class="ko-row"><span class="ko-time">1º Grupo E</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="o3c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">3º A/B/C/D/F</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="o3c2"></div></div>
@@ -389,34 +389,39 @@ body{background:#111;font-family:'Barlow',sans-serif;color:#fff;min-height:100vh
 
 <!-- QUARTAS -->
 <div id="sec-quartas" class="section">
-  <div class="ko-section-title ko-quartas">Quartas de Final</div>
-  <div class="ko-card"><span class="ko-data">04/07 · 14H · Houston (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q1c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q1c2"></div></div>
-  <div class="ko-card"><span class="ko-data">04/07 · 18H · Filadelfia (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q2c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q2c2"></div></div>
-  <div class="ko-card"><span class="ko-data">05/07 · 17H · East Rutherford (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q3c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q3c2"></div></div>
-  <div class="ko-card"><span class="ko-data">05/07 · 21H · Cidade do Mexico (MEX)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q4c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q4c2"></div></div>
-  <div class="ko-card"><span class="ko-data">06/07 · 16H · Dallas (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q5c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q5c2"></div></div>
-  <div class="ko-card"><span class="ko-data">07/07 · 13H · Atlanta (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q6c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q6c2"></div></div>
-  <div class="ko-card"><span class="ko-data">06/07 · 21H · Seattle (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q7c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q7c2"></div></div>
-  <div class="ko-card"><span class="ko-data">07/07 · 17H · Vancouver (CAN)</span><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q8c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q8c2"></div></div>
+  <div class="ko-section-title ko-quartas">Oitavas de Final</div>
+  <div class="ko-card"><span class="ko-data">04/07 · 14H · Houston (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q1c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q1c2"></div></div>
+  <div class="ko-card"><span class="ko-data">04/07 · 18H · Filadelfia (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q2c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q2c2"></div></div>
+  <div class="ko-card"><span class="ko-data">05/07 · 17H · East Rutherford (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q3c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q3c2"></div></div>
+  <div class="ko-card"><span class="ko-data">05/07 · 21H · Cidade do Mexico (MEX)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q4c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q4c2"></div></div>
+  <div class="ko-card"><span class="ko-data">06/07 · 16H · Dallas (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q5c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q5c2"></div></div>
+  <div class="ko-card"><span class="ko-data">07/07 · 13H · Atlanta (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q6c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q6c2"></div></div>
+  <div class="ko-card"><span class="ko-data">06/07 · 21H · Seattle (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q7c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q7c2"></div></div>
+  <div class="ko-card"><span class="ko-data">07/07 · 17H · Vancouver (CAN)</span><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q8c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor 2ª Fase</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="q8c2"></div></div>
   <button class="btn-limpar" onclick="limparSecao('sec-quartas')">Limpar palpites</button>
 </div>
 
 <!-- SEMI -->
 <div id="sec-semi" class="section">
-  <div class="ko-section-title ko-semi">Semifinais</div>
-  <div class="ko-card"><span class="ko-data">Semifinal 1 · 14/07 · 16H · Dallas (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor QF</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s1c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor QF</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s1c2"></div></div>
-  <div class="ko-card"><span class="ko-data">Semifinal 2 · 15/07 · 16H · Atlanta (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor QF</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s2c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor QF</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s2c2"></div></div>
+  <div class="ko-section-title ko-semi">Quartas de Final</div>
+  <div class="ko-card"><span class="ko-data">09/07 · 17H · Foxborough (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s1c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s1c2"></div></div>
+  <div class="ko-card"><span class="ko-data">10/07 · 16H · Inglewood (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s2c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s2c2"></div></div>
+  <div class="ko-card"><span class="ko-data">11/07 · 18H · Miami (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s3c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s3c2"></div></div>
+  <div class="ko-card"><span class="ko-data">11/07 · 22H · Kansas City (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s4c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor Oitavas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="s4c2"></div></div>
   <button class="btn-limpar" onclick="limparSecao('sec-semi')">Limpar palpites</button>
 </div>
 
 <!-- FINAL -->
 <div id="sec-final" class="section">
-  <div class="ko-section-title ko-terceiro">3º Lugar · 19/07 · 16H · East Rutherford</div>
+  <div class="ko-section-title ko-semi">Semifinais</div>
+  <div class="ko-card"><span class="ko-data">Semifinal 1 · 14/07 · 16H · Dallas (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor Quartas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="sf1c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor Quartas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="sf1c2"></div></div>
+  <div class="ko-card"><span class="ko-data">Semifinal 2 · 15/07 · 16H · Atlanta (EUA)</span><div class="ko-row"><span class="ko-time">Vencedor Quartas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="sf2c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Vencedor Quartas</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="sf2c2"></div></div>
+  <div class="ko-section-title ko-terceiro" style="margin-top:16px">3º Lugar · 18/07 · 18H · Miami (EUA)</div>
   <div class="ko-card"><span class="ko-data">Disputa de Terceiro Lugar</span><div class="ko-row"><span class="ko-time">Perdedor SF1</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="t1c1"></div><div class="ko-sep"></div><div class="ko-row"><span class="ko-time">Perdedor SF2</span><input type="number" class="ko-placar" min="0" max="99" placeholder="-" data-jogo="t1c2"></div></div>
-  <div class="ko-section-title ko-final" style="margin-top:16px">FINAL · 18/07 · 18H · Miami (EUA)</div>
+  <div class="ko-section-title ko-final" style="margin-top:16px">FINAL · 19/07 · 16H · East Rutherford (EUA)</div>
   <div class="final-destaque">
     <div class="fd-label">🏆 GRANDE FINAL 🏆</div>
-    <div class="fd-data">18 de julho · 18H (Brasilia) · Hard Rock Stadium · Miami, EUA</div>
+    <div class="fd-data">19 de julho · 16H (Brasilia) · MetLife Stadium · East Rutherford, EUA</div>
     <div class="fd-jogo">
       <span class="fd-time">Vencedor SF1</span>
       <input type="number" class="fd-placar" min="0" max="99" placeholder="-" data-jogo="f1c1">
